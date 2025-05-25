@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Bíblia em Português | My Bible in Portuguese</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem; /* text-5xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+        .chapter-link {
+            display: inline-block;
+            background-color: #10b981; /* Green button */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .chapter-link:hover {
+            background-color: #059669; /* Darker green on hover */
+        }
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem; /* text-4xl on small screens */
+            }
+            h2 {
+                font-size: 1.25rem; /* text-xl on small screens */
+            }
+            .chapter-link {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minha Bíblia em Português</h1>
+        <h2>My Bible in Portuguese</h2>
+        <p class="mb-6 text-lg text-gray-700">
+            Selecione um capítulo para começar a aprender português enquanto lê a Bíblia.
+            <br>
+            Select a chapter to start learning Portuguese while reading the Bible.
+        </p>
+        <a href="Exodus_19.html" class="chapter-link">
+            Ir para Êxodo 19 | Go to Exodus 19
+        </a>
+    </div>
+</body>
+</html>
